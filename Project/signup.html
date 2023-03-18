@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                box-sizing: border-box;
+                padding: 0px;
+                margin: 0px;
+            }
+            .container{
+                background: url(file:///D:/Project/technology-android-logo-nhbkd8vaay6kd4o4.jpg);
+                float: right;
+                width: 60%;
+                height: 653px;
+                border-left: 2px solid red;
+            }
+
+            .loginbox{
+                padding: 0px;
+                margin: 70px;
+                border: 3px solid rgb(255, 0, 0);
+                border-radius: 15px;
+                height: 500px;
+                width: 300px;
+                text-align: center;
+            }
+                 
+            .primary{
+                float: left;
+                width:40%;
+                height: 652px;
+
+            }
+
+            .img{
+                height: 653px;
+                width: 550px;
+            }
+
+            img{
+                object-fit: cover;
+                width: auto;
+                height: 750px;
+            }
+
+            .gohome{
+                color: white;
+                text-decoration: none;
+            }
+
+            .gohome:hover{
+                color: rgb(241, 98, 98);
+            }
+
+            .box{
+                text-align: center;
+            }
+
+            .box input[type="text"], .box input[type="password"], .box input[type="email"], .box input[type="number"]{
+                width: 220px;
+                padding: 10px 5px;
+                display: block;
+                margin: 4px auto;
+                text-align: center;
+                border: 2px solid red;
+                border-radius: 50px;
+                transition: 0.25px;
+                opacity: 0.6;
+            }
+
+            .box input[type="submit"]{
+                background-image: linear-gradient(yellow, red);
+                width: 110px;
+                padding: 5px 5px;
+                display: block;
+                margin: 18px auto;
+                text-align: center;
+                border: 2px solid yellow;
+                border-radius: 50px;
+                transition: 0.25px;
+                cursor: pointer;
+                font-size: large;
+                font-weight: bold;
+            }
+
+            .box input[type="submit"]:hover{
+                background-image: linear-gradient(rgb(15, 202, 193), rgb(75, 1, 29));
+                color: white;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div>
+            <div class="primary">
+                <img src="file:///D:/Project/sign%20wallpaper.jpg" class="img">
+            </div>
+            <div class="container">
+                <div class="loginbox">
+                    <h1 style="color:rgb(138, 238, 45)">Sign-Up</h1>
+                    <form name="f1" id="form" action="" class="box" onsubmit="return validate()">
+                        <input type="text" placeholder="Enter username Name" id="username" value=""><br>
+                        <input type="number" placeholder="Enter Mobile Number" id="mnumber" value=""><br>
+                        <input type="email" placeholder="Enter Email Address" id="email" value=""><br>
+                        <input type="password" placeholder="Create New Password"name="pass" value=""><br>
+                        <input type="password" placeholder="Confirm Password"name="cpass" value=""><br>
+                        <input type="submit" name="submit" value="login">
+                    </form>
+                    <a href="file:///D:/Project/homepage.html" class="gohome">Go To Home</a>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>

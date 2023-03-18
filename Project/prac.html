@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="javascript">
+       function validate()
+       {
+        var user=document.f1.username.value;
+        var pass=document.f1.pass.value;
+        if(user==""||user.length<9)
+        alert("Please input a valid username");
+        sp=0;
+        for(i=0;i<user.length;i++)
+        {
+            ch=user.charAt(i);
+            if(ch==' ')
+            sp=1;
+        }
+        if(sp==1)
+        alert("Please enter username without space");
+        if(pass==""||pass.length<9)
+        alert("Please enter a valid password");
+        alphadigit=0;
+        alpha=/[a-zA-Z]/;
+        digit=/[0-9]/;
+        if(pass.match(alpha)&&pass.match(digit))
+        alphadigit=1;
+        if(alphadigit==0)
+        {
+            alert("Please enter atleast one atleast one alphabet and atleast one digit")
+        }
+       }
+    </script>
+</head>
+<body>
+    <form name="f1" action="" onsubmit="validate()">
+        username:<input type="text" name="username" value=""><br>
+        password:<input type="password" name="pass" value="">
+        <input type="submit" name="submit" value="login">
+    </form>
+</body>
+</html>
